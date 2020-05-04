@@ -1,0 +1,217 @@
+./cuda_api_object.h:174:  cuda_runtime_api(gpgpu_context *ctx) {
+./cuda_api_object.h:194:  class gpgpu_context *gpgpu_ctx;
+./gpgpu_context.h:11:class gpgpu_context {
+./gpgpu_context.h:13:  gpgpu_context() {
+./gpgpu_context.h:81:gpgpu_context *GPGPU_Context();
+./cuda_runtime_api.cc~:136:#include "gpgpu_context.h"
+./cuda_runtime_api.cc~:193:struct _cuda_device_id *gpgpu_context::GPGPUSim_Init() {
+./cuda_runtime_api.cc~:245:CUctx_st *GPGPUSim_Context(gpgpu_context *ctx) {
+./cuda_runtime_api.cc~:256:gpgpu_context *GPGPU_Context() {
+./cuda_runtime_api.cc~:257:  static gpgpu_context *gpgpu_ctx = NULL;
+./cuda_runtime_api.cc~:259:    gpgpu_ctx = new gpgpu_context();
+./cuda_runtime_api.cc~:489: * Add internal cuda runtime API call to accept gpgpu_context *
+./cuda_runtime_api.cc~:491:cudaError_t cudaSetDeviceInternal(int device, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:492:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:511:                                  gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:512:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:526:    size_t *pValue, cudaLimit limit, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:527:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:574:                                     gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:575:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:756:                                  gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:757:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:783:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:784:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:820:                                      gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:821:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:837:cudaGetDeviceCountInternal(int *count, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:838:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:853:    struct cudaDeviceProp *prop, int device, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:854:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:874:                         gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:875:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:891:                                      gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:892:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:914:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:915:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1010:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1011:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1035:                                   gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1036:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1058:                        size_t height, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1059:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1083:                                             gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1084:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1125:    size_t width, size_t height __dv(1), gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1126:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1158:                   enum cudaMemcpyKind kind, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1159:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1209:    size_t count, enum cudaMemcpyKind kind, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1210:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1241:    size_t height, enum cudaMemcpyKind kind, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1242:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1273:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1274:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1319:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1320:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1343:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1344:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1364:    cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1365:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1398:    unsigned int flags, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1399:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1438:    void *mem, int c, size_t count, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1439:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1457:                        gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1458:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1476:                                          gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1481:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1543:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1544:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1588:                                  gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1589:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1613:                             gpgpu_context *ctx) {
+./cuda_runtime_api.cc~:1633:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1634:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1666:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1667:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1868:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1869:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1910:    const struct cudaChannelFormatDesc *desc, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1911:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1932:    const struct textureReference *texref, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1933:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1957:    size_t sharedMem, cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1958:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:1983:    cudaStream_t *stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:1984:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2008:    cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2009:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2030:    cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2031:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2057:    gpgpu_context *gpgpu_ctx =
+./cuda_runtime_api.cc~:2060:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2087:                                            gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2092:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2122:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2123:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2145:    void **kernelParams, void **extra, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2146:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2189:    cudaEvent_t event, cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2190:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2210:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2211:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2243:cudaThreadExitInternal(gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2244:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2258:cudaThreadSynchronizeInternal(gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2259:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:2274:cudaDeviceSynchronizeInternal(gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc~:2275:  gpgpu_context *ctx;
+./cuda_runtime_api.cc~:3471:void gpgpu_context::cuobjdumpParseBinary(unsigned int handle) {
+./cuda_runtime_api.cc:136:#include "gpgpu_context.h"
+./cuda_runtime_api.cc:193:struct _cuda_device_id *gpgpu_context::GPGPUSim_Init() {
+./cuda_runtime_api.cc:245:CUctx_st *GPGPUSim_Context(gpgpu_context *ctx) {
+./cuda_runtime_api.cc:256:gpgpu_context *GPGPU_Context() {
+./cuda_runtime_api.cc:257:  static gpgpu_context *gpgpu_ctx = NULL;
+./cuda_runtime_api.cc:259:    gpgpu_ctx = new gpgpu_context();
+./cuda_runtime_api.cc:490: * Add internal cuda runtime API call to accept gpgpu_context *
+./cuda_runtime_api.cc:492:cudaError_t cudaSetDeviceInternal(int device, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:493:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:512:                                  gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:513:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:527:    size_t *pValue, cudaLimit limit, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:528:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:575:                                     gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:576:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:757:                                  gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:758:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:784:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:785:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:821:                                      gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:822:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:838:cudaGetDeviceCountInternal(int *count, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:839:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:854:    struct cudaDeviceProp *prop, int device, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:855:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:875:                         gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:876:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:892:                                      gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:893:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:915:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:916:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1011:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1012:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1036:                                   gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1037:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1059:                        size_t height, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1060:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1084:                                             gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1085:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1126:    size_t width, size_t height __dv(1), gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1127:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1159:                   enum cudaMemcpyKind kind, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1160:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1210:    size_t count, enum cudaMemcpyKind kind, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1211:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1242:    size_t height, enum cudaMemcpyKind kind, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1243:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1274:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1275:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1320:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1321:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1344:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1345:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1365:    cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1366:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1399:    unsigned int flags, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1400:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1439:    void *mem, int c, size_t count, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1440:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1458:                        gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1459:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1477:                                          gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1482:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1544:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1545:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1589:                                  gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1590:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1614:                             gpgpu_context *ctx) {
+./cuda_runtime_api.cc:1634:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1635:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1667:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1668:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1869:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1870:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1911:    const struct cudaChannelFormatDesc *desc, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1912:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1933:    const struct textureReference *texref, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1934:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1958:    size_t sharedMem, cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1959:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:1984:    cudaStream_t *stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:1985:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2009:    cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2010:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2031:    cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2032:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2058:    gpgpu_context *gpgpu_ctx =
+./cuda_runtime_api.cc:2061:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2088:                                            gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2093:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2123:                               gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2124:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2146:    void **kernelParams, void **extra, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2147:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2190:    cudaEvent_t event, cudaStream_t stream, gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2191:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2211:    gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2212:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2244:cudaThreadExitInternal(gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2245:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2259:cudaThreadSynchronizeInternal(gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2260:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2275:cudaDeviceSynchronizeInternal(gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2276:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:2309:__host__ cudaError_t CUDARTAPI cudaMallocManaged(void **devPtr, size_t size,gpgpu_context *gpgpu_ctx = NULL) {
+./cuda_runtime_api.cc:2311:  gpgpu_context *ctx;
+./cuda_runtime_api.cc:3497:void gpgpu_context::cuobjdumpParseBinary(unsigned int handle) {
